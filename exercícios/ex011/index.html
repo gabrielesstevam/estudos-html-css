@@ -1,0 +1,26 @@
+<!-- Aula 02,03 - Capítulo 11 - Módulo 01 -->
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 011</title>
+ </head>
+ <body>
+    <h1>Mídias</h1>
+    <h2>Imagens Dinâmicas</h2>
+    <p>Tente abrir esta página em dispositivos diferentes ou simplesmente gerencie o tamanho da sua janela do navegador</p>
+    <picture>
+        <source media="(max-width: 710px)" srcset="images/image-p.png">
+        <source media="(max-width: 1050px)" srcset="images/image-m.png">
+        <img src="images/image-g.png" alt="Imagem flexível">
+
+        <h2>Reproduzindo Áudio</h2>
+        <p>Vamos aprender a aplicar áudios em HTML</p>
+        <audio controls preload="metadata" loop>
+         <source src="midia/Don't Turn Back - Silent Partner.mp3" type="audio/mpeg">
+         Seu navegador não aceita sons, clique aqui para fazer o download do som <a href="midia/Don't Turn Back - Silent Partner.mp3" download>- Download -</a>
+        </audio>
+    </picture>
+ </body>
+ </html>
