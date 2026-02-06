@@ -45,23 +45,31 @@ header > p {
 }
 /* ================================================ */
 nav {
+    font-size: 1.1em;
+    font-family: 'roboto';
     padding: 15px;
     background-color: var(--cor4);
     box-shadow: 0px 3px 5px var(--cor4)
 }
 nav > a {
-    text-shadow: 1px 1px 5px var(--cor1);
     color: white;
     text-decoration: none;
-    padding: 5px;
-    margin-right: 10px;
+    padding: 10px;
+    margin-right: 25px;
+}
+nav > a:hover {
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: var(--cor4);
+    background-color: var(--cor1);
 }
 /* ================================================ */
 main {
     background-color: white;
     margin: auto;
     padding: 1px;
-    min-width: 350px;
+    min-width: 300px;
     max-width: 850px;
     box-shadow: 0px 0px 5px 2px var(--cor4);
 }
@@ -81,6 +89,7 @@ main > h3{
     font-size: 1.5em;
 }
 main > p {
+    line-height: 150%;
     font-family: 'roboto';
     font-size: 1.2em;
     text-align: justify;
@@ -94,27 +103,40 @@ img{
 .destaque {
     font-weight: bold;
     color: #2b975c;
+    padding: 5px;
+}
+.destaque:hover {
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    background-color: var(--cor4);
+    color: var(--cor1);
 }
 .link {
+    padding:3px;
     text-decoration: none;
     font-weight: bold;
     color: #2b975c;
 }
+.link:hover {
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
 .link::after {
     content: '🔗';
 }
-/* ================================================ */
-#video{
-    margin: 0px;
-    height: 450px;
-    padding: 15px;
-    background-color: var(--cor4);
+#video {
+background-color: var(--cor4);
+width: 100%;
+margin: auto;
 }
-#video > iframe {
-    display: block;
-    margin: auto;
-    width: 95%;
-    height: 100%;
+#video iframe {
+margin: auto;
+width: 90%; 
+aspect-ratio: 16 / 9;
+height: auto;
+display: block;
 }
 /* ================================================ */
 #learn {
@@ -125,21 +147,26 @@ img{
     padding-bottom: 10px;
 }
 #learn > h4 {
+    font-size: 1.2em;
     border-radius: 20px 20px 0px 0px;
     padding: 10px;
     color: white;
     background-color: var(--cor3);
 }
 #learn > p {
+    line-height: 150%;
     font-size: 1.2em;
     margin: 0px 10px 10px 20px;
     text-indent: 20px;
 }
 #learn > ul {
+    line-height: 30px;
     list-style: none;
     columns: 2;
-    text-decoration: underline;
     font-weight: bold;
+}
+abbr {
+    text-decoration: none;
 }
 #learn > ul > li::marker{
     content: '✓  ';
