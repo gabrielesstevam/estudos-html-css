@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body{
+background-color: lightseagreen;
+}
+
+h1 {
+background-color: rgb(211, 187, 234);
+color: darkslateblue;
+}
+
+h2 {
+background-color: rgb(158, 90, 203);
+color: rgb(45, 40, 74);
+}

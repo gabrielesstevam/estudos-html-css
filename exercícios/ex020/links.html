@@ -1,0 +1,48 @@
+<!-- Aula 04 - Capítulo 15 - Módulo 02 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício020.2</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            background-image: linear-gradient(to right, black, white);
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+        a::after{
+            content: ' »';
+            font-weight: lighter;
+            color: rgb(249, 161, 175);
+        }
+        a::before{
+            content: '« ';
+            font-weight: lighter;
+            color: rgb(249, 161, 175);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gabrielesstevam" target="_blank">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/@Gabrlll156" target="_blank">Canal do Youtube</a></li>
+        <li><a href="houver.html" target="_blank">Site do Gabriel</a></li>
+    </ul>
+</body>
+</html>

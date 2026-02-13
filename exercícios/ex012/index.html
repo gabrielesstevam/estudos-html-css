@@ -1,0 +1,27 @@
+<!-- Aula 04,05 - Capítulo 11 - Módulo 01 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 012</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="500" poster="images/Thumb.jpeg" controls loop>
+        <source src="midia/Video.ogv" type="video/ogv"> <!-- 1° opção mais leve -->
+        <source src="midia/Video.mkv" type="video/mkv">
+        <source src="midia/Video.webm" type="video/webm"> 
+        <source src="midia/Video.mp4" type="video/mp4">
+        Seu navegador não tem compatibilidade com reprodução de vídeos
+    </video>
+
+    <h1>Inserindo Vídeos com Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=8zKQ2I9dCmJU7MWk&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo Vídeos com Vímeo</h1>
+    <iframe src="https://player.vimeo.com/video/506012984?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"title="Valorant invitational_Promotion" width="500" height="315"></iframe>
+    
+</body>
+</html>

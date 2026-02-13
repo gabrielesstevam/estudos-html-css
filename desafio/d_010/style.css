@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url(font/idroid.otf);
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(font/RobotoCondensed-VariableFont_wght.ttf);
+}
+:root {
+    --cor1: #C5EBD6;
+    --cor2: #84E1AD;
+    --cor3: #3BD47F;
+    --cor4: #1A5C38;
+}
+/* ================================================ */
+body {
+    margin: 0px;
+    background-color: var(--cor2);
+}
+/* ================================================ */
+header {
+    padding: 25px;
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    color: white;
+}
+header > h1 {
+    text-shadow: 3px 3px 5px  var(--cor4);
+    font-weight: normal;
+    font-family: 'roboto';
+    text-align: center;
+    font-size: 2.2em;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+header > p {
+    font-family: 'roboto';
+    font-weight: lighter;
+    font-size: 1.2em;
+    text-align: center;
+    margin: auto;
+}
+/* ================================================ */
+nav {
+    font-size: 1.1em;
+    font-family: 'roboto';
+    padding: 15px;
+    background-color: var(--cor4);
+    box-shadow: 0px 3px 5px var(--cor4)
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 25px;
+}
+nav > a:hover {
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: var(--cor4);
+    background-color: var(--cor1);
+}
+/* ================================================ */
+main {
+    background-color: white;
+    margin: auto;
+    padding: 1px;
+    min-width: 300px;
+    max-width: 850px;
+    box-shadow: 0px 0px 5px 2px var(--cor4);
+}
+main > h2{
+    font-family: 'Android';
+    color: var(--cor4);
+    margin: 20px;
+    margin-left: 20px;
+    font-size: 2em;
+}
+main > h3{
+    font-family: 'Android';
+    padding: 5px;
+    background-image:linear-gradient(to right, var(--cor1), white);
+    color: var(--cor4);
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+main > p {
+    line-height: 150%;
+    font-family: 'roboto';
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 20px;
+    text-indent: 40px;
+}
+img{
+    display: block;
+    margin: auto;
+}
+.destaque {
+    font-weight: bold;
+    color: #2b975c;
+    padding: 5px;
+}
+.destaque:hover {
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+.link {
+    padding:3px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #2b975c;
+}
+.link:hover {
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+.link::after {
+    content: '🔗';
+}
+#video {
+background-color: var(--cor4);
+width: 100%;
+margin: auto;
+}
+#video iframe {
+margin: auto;
+width: 90%; 
+aspect-ratio: 16 / 9;
+height: auto;
+display: block;
+}
+/* ================================================ */
+#learn {
+    border-radius: 20px 20px 20px 20px;
+    font-family: 'roboto';
+    margin: 20px;
+    background-color: var(--cor1);
+    padding-bottom: 10px;
+}
+#learn > h4 {
+    font-size: 1.2em;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px;
+    color: white;
+    background-color: var(--cor3);
+}
+#learn > p {
+    line-height: 150%;
+    font-size: 1.2em;
+    margin: 0px 10px 10px 20px;
+    text-indent: 20px;
+}
+#learn > ul {
+    line-height: 30px;
+    list-style: none;
+    columns: 2;
+    font-weight: bold;
+}
+abbr {
+    text-decoration: none;
+}
+#learn > ul > li::marker{
+    content: '✓  ';
+}
+/* ================================================ */
+footer > p{
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: var(--cor4);
+}

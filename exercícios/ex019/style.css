@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body{
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1#central {
+    background-color: rgb(158, 195, 208);
+    color: rgb(51, 59, 78);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+h1{ 
+    color: darkslategray
+}
+h2 {
+    color: rgb(60, 138, 138);
+}
+h3 {
+    color: rgb(64, 113, 84);
+}
+
+.basic {
+    padding: 4px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(170, 247, 170),lightblue);
+    background-color: rgb(170, 247, 170);
+}
+.intermediare {
+    padding: 4px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(214, 214, 117),lightblue);
+    color: rgb(127, 127, 20);
+    background-color: rgb(214, 214, 117);
+}
+.advanced {
+    padding: 4px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(199, 121, 121),lightblue);
+    color: rgb(127, 67, 67);
+    background-color: rgb(199, 121, 121);
+}
